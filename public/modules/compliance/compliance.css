@@ -1,0 +1,47 @@
+/* Compliance Tracker styles. Everything is scoped under .ct so nothing here can
+   affect the rest of the site. Colours come from the site's own CSS variables. */
+.ct { --ct-navy: var(--navy, #0d2b4e); --ct-accent: var(--accent, #f39200); --ct-line: var(--line, #d7dde5);
+      --ct-muted: var(--muted, #5a6675); --ct-ok: #1d7a3d; --ct-bad: #b3261e; }
+.ct :where(h3) { margin: 26px 0 10px; font-size: 1.0625rem; }
+.ct :where(h3):first-child { margin-top: 0; }
+
+.ct .ct-table-wrap { overflow-x: auto; }
+.ct .ct-table { width: 100%; border-collapse: collapse; }
+.ct .ct-table th { background: var(--ct-navy); color: #fff; text-align: left; padding: 10px 12px; font-size: .875rem; border: 1px solid var(--ct-line); }
+.ct .ct-table td { padding: 10px 12px; border: 1px solid var(--ct-line); font-size: .875rem; vertical-align: top; }
+.ct .ct-table tbody tr:nth-child(even) { background: #f7f9fb; }
+.ct .ct-table th:first-child, .ct .ct-table td:first-child { width: 56px; }
+.ct .ct-table small { color: var(--ct-muted); }
+.ct .ct-pdf { display: inline-block; margin-left: 6px; padding: 0 4px; border: 1px solid #d9534f; color: #d9534f; border-radius: 2px; font-size: .625rem; font-weight: 700; vertical-align: middle; }
+
+.ct .ct-hint { color: var(--ct-muted); margin: 0 0 14px; max-width: 62ch; }
+.ct .ct-empty { color: var(--ct-muted); padding: 14px 0; margin: 0; }
+
+.ct .ct-tabs { display: flex; margin-bottom: 16px; }
+.ct .ct-tabs button { padding: 9px 22px; border: 1px solid var(--ct-line); background: #f4f8fb; cursor: pointer; font: inherit; color: inherit; }
+.ct .ct-tabs button.on { background: var(--ct-navy); color: #fff; border-color: var(--ct-navy); }
+
+.ct .ct-form { display: grid; gap: 14px; max-width: 460px; }
+.ct .ct-form label { display: grid; gap: 4px; font-weight: 600; font-size: .875rem; }
+.ct .ct-form input, .ct .ct-form select { padding: 10px 12px; border: 1px solid #aeb9c2; border-radius: 3px; font: inherit; font-weight: 400; background: #fff; color: var(--ink, #1c2530); width: 100%; }
+
+.ct .ct-btn { display: inline-block; background: var(--ct-navy); color: #fff; border: 1px solid var(--ct-navy); padding: 10px 20px; font: inherit; font-weight: 600; border-radius: 3px; cursor: pointer; text-decoration: none; justify-self: start; }
+.ct .ct-btn:hover { background: var(--ct-accent); border-color: var(--ct-accent); color: #111; }
+.ct .ct-btn:disabled { opacity: .6; cursor: wait; }
+.ct .ct-btn.ghost { background: #fff; color: var(--ct-navy); }
+.ct .ct-btn.ghost:hover { background: #eef4fb; border-color: var(--ct-navy); color: var(--ct-navy); }
+.ct .ct-btn.ok { background: var(--ct-ok); border-color: var(--ct-ok); }
+.ct .ct-btn.bad { background: var(--ct-bad); border-color: var(--ct-bad); }
+.ct .ct-btn.ok:hover, .ct .ct-btn.bad:hover { filter: brightness(.9); color: #fff; }
+.ct .ct-btn.sm { padding: 5px 12px; font-size: .8125rem; }
+
+.ct .ct-msg { margin: 0; min-height: 1.4em; font-size: .875rem; }
+.ct .ct-msg.err { color: var(--ct-bad); }
+.ct .ct-msg.good { color: var(--ct-ok); }
+
+.ct .ct-who { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; background: #eef4f5; padding: 10px 14px; margin-bottom: 18px; border-left: 4px solid var(--ct-accent); }
+.ct .ct-badge { font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+.ct .ct-badge.pending { background: #fff3cd; color: #7a5b00; }
+.ct .ct-badge.approved { background: #d9f2e1; color: var(--ct-ok); }
+.ct .ct-badge.rejected { background: #fbe0de; color: var(--ct-bad); }
+.ct .ct-actions { display: flex; gap: 6px; flex-wrap: wrap; }

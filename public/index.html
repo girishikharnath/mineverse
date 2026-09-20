@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Ministry of Coal, Government of India</title>
+  <meta name="description" content="Practice clone of the Ministry of Coal, Government of India website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <noscript><p class="noscript">JavaScript is required for the menus and interactive features of this website. Please enable JavaScript in your browser.</p></noscript>
+
+  <div id="site-header"></div>
+
+  <main id="skipCont" tabindex="-1">
+
+    <!-- Banner slider -->
+    <section class="slider" aria-roledescription="carousel" aria-label="Featured banners">
+      <div class="slides" id="slides"></div>
+      <button class="s-btn prev" type="button" aria-label="Previous slide">&#10094;</button>
+      <button class="s-btn next" type="button" aria-label="Next slide">&#10095;</button>
+      <button class="s-pp" type="button" aria-label="Pause slideshow">Pause</button>
+      <div class="s-dots" id="dots"></div>
+    </section>
+
+    <!-- Welcome + officials -->
+    <section class="wrap intro">
+      <div class="card welcome">
+        <h1 data-en="Welcome to Ministry of Coal" data-hi="कोयला मंत्रालय में आपका स्वागत है">Welcome to Ministry of Coal</h1>
+        <p>Welcome to the website of Ministry of Coal, Government of India.</p>
+        <p>The Ministry of Coal has the overall responsibility of determining policies and strategies in respect of exploration and development of coal and lignite reserves, sanctioning of important projects of high value and for deciding all related issues. Under the administrative control of the Ministry, these key functions are exercised through the Public Sector Undertakings, namely, Coal India Ltd. and its subsidiaries and Neyveli Lignite Corporation India Limited (NLCIL). Other than Coal India Ltd. and Neyveli Lignite Corporation India Ltd., the Ministry of Coal also has a joint venture with Government of Telangana called Singareni Collieries Company Limited. Government of Telangana holds 51% equity and Government of India holds 49% equity.</p>
+        <p><a class="btn" href="page.html?p=about-us%2Fabout-ministry" data-en="Read More" data-hi="और पढ़ें">Read More</a></p>
+      </div>
+      <div class="officials" id="officials"></div>
+    </section>
+
+    <!-- What's New / Press Releases -->
+    <section class="wrap feeds">
+      <div class="box">
+        <div class="box-head">
+          <h2 data-en="What's New" data-hi="नया क्या है">What's New</h2>
+          <button class="pp" type="button" aria-label="Pause What's New list" data-target="ticker-new">Pause</button>
+        </div>
+        <div class="ticker" id="ticker-new"></div>
+        <div class="box-foot"><a href="page.html?p=whats-new" data-en="Read More" data-hi="और पढ़ें">Read More</a></div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <h2 data-en="Press Releases" data-hi="प्रेस विज्ञप्तियाँ">Press Releases</h2>
+          <button class="pp" type="button" aria-label="Pause Press Releases list" data-target="ticker-press">Pause</button>
+        </div>
+        <div class="ticker" id="ticker-press"></div>
+        <div class="box-foot"><a href="page.html?p=media%2Fpress-release" data-en="Read More" data-hi="और पढ़ें">Read More</a></div>
+      </div>
+    </section>
+
+    <!-- Quick links -->
+    <section class="wrap quick" aria-label="Quick links">
+      <ul class="tiles" id="tiles"></ul>
+    </section>
+
+    <!-- Photo gallery -->
+    <section class="wrap gallery">
+      <div class="sec-head">
+        <h2 data-en="Photo Gallery" data-hi="फोटो गैलरी">Photo Gallery</h2>
+        <a href="page.html?p=media%2Fphoto-gallery" data-en="View more" data-hi="और देखें">View more</a>
+      </div>
+      <div class="photos" id="photos"></div>
+    </section>
+
+    <!-- Related-site logos -->
+    <section class="logos" aria-label="Related government websites">
+      <div class="wrap">
+        <div class="marquee" id="logos"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
