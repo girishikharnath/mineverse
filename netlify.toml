@@ -2,6 +2,10 @@
   publish = "public"
   functions = "netlify/functions"
 
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["better-sqlite3"]
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/api/:splat"
