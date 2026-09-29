@@ -8,7 +8,7 @@
   var top = p.split('/')[0], item = S.util.find(top);
   var title = item ? item.t : 'Page not found';
   var el = $('pg');
-  var setTitle = function (t) { $('page-title').textContent = t; document.title = t + ' | KhanDrishti'; };
+  var setTitle = function (t) { $('page-title').textContent = t; document.title = t + ' | Mineverse'; };
   setTitle(title);
 
   var loadCss = function (h) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = h; document.head.appendChild(l); };

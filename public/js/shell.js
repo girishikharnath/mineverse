@@ -35,7 +35,7 @@
   document.getElementById('shell').innerHTML =
     '<a class="skip" href="#content">Skip to main content</a>' +
     '<aside class="side" id="side" aria-label="Main navigation">' +
-      '<a class="brand" href="index.html"><svg viewBox="0 0 24 24" width="26" height="24" aria-hidden="true"><path d="M1 21L9 5l4 7 3-4 7 13z" fill="#e8a020"/></svg><b>KhanDrishti</b>' +
+      '<a class="brand" href="index.html"><svg viewBox="0 0 24 24" width="26" height="24" aria-hidden="true"><path d="M1 21L9 5l4 7 3-4 7 13z" fill="#e8a020"/></svg><b>Mineverse</b>' +
       '<small>Statutory Compliance &amp; Field Governance</small></a>' +
       '<nav><ul>' + S.menu.map(function (m) { return '<li>' + link(m) + '</li>'; }).join('') + '</ul></nav>' +
       '<div class="side-foot"><ul><li>' + link(S.settings) + '</li></ul></div>' +

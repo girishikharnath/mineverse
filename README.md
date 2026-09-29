@@ -1,4 +1,4 @@
-# KhanDrishti: Smart Coal Governance (Compliance Tracker and Inspections)
+# Mineverse: Smart Coal Governance (Compliance Tracker and Inspections)
 
 The practice Ministry of Coal site, with the **Compliance Tracker** and **Inspections**
 modules built into its menu. One Node.js server runs everything.
